@@ -5,13 +5,12 @@ using namespace std;
 int n;
 int arr[100];
 
-void bubble_sort(int arr[],int n)
+void ps(int arr[],int n)
 {
-    int sorted=true;
-    int size=n;
+    bool sorted=true;
     do{
         sorted=true;
-        for(int i=0;i<size-1;i++)
+        for(int i=0;i<n-1;i++)
         {
             if(arr[i]>arr[i+1])
             {
@@ -23,13 +22,14 @@ void bubble_sort(int arr[],int n)
         }
     }while(!sorted);
 }
+
 int main() {
     cin >> n;
 
     for (int i = 0; i < n; i++) {
         cin >> arr[i];
     }
-    bubble_sort(arr,n);
+    ps(arr,n);
     for(int i=0;i<n;i++)
     cout << arr[i] << " ";
     return 0;
