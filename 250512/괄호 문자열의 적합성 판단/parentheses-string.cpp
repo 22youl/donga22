@@ -16,6 +16,7 @@ int main() {
         }
         else
         {
+            if(s.empty()==false)
             s.pop();
             if(s.empty()==true)
             {
